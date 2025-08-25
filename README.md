@@ -18,7 +18,6 @@ This tool connects to the Checkmarx AST API to create detailed security scan rep
 ## Prerequisites
 
 - Python 3.6 or higher
-- `requests` library
 - Valid Checkmarx AST account with API access
 - API key from Checkmarx platform
 
@@ -32,7 +31,7 @@ cd report-generator
 
 2. Install required dependencies:
 ```bash
-pip install requests
+pip install -r requirements.txt
 ```
 
 ## Configuration
@@ -148,6 +147,7 @@ report-generator/
 │   └── generate_oauth_token.py  # OAuth authentication utilities
 ├── config.json             # Configuration file (create from example)
 ├── example-config.json     # Configuration template
+├── requirements.txt        # Python dependencies
 └── README.md              # This file
 ```
 
